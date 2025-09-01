@@ -17,9 +17,10 @@ Scheme](https://www.gnu.org/software/guile/), and
 [Bagatto](https://bagatto.co/), written in [Janet](https://janet-lang.org/).
 
 I ended up with Haunt, simply because it was in nixpkgs which in turn made my
-life easier. You can check out the source of the website [here](#). ¯\_(ツ)_/¯
-Documentation was so-so, but by taking advantage of the awesome people who made
-stuff with Haunt over at [Awesome Haunt](https://awesome.haunt.page/), I
-managed to get up and running. It really is quite a powerful ssg.
+life easier. You can check out the source of the website
+[here](https://git.marius.pm/website/). ¯\_(ツ)_/¯ Documentation was so-so, but
+by taking advantage of the awesome people who made stuff with Haunt over at
+[Awesome Haunt](https://awesome.haunt.page/), I managed to get up and running.
+It really is quite a powerful ssg.
 
 That said, Janet might be worth checking out at some point.

@@ -93,7 +93,7 @@
                              (img (@ (src "/images/cc.png") (alt "CC-BY-NC-SA-4.0"))))
                           (p "© 2025 marius.pm, Ramblings "
                              (a (@ (href "https://creativecommons.org/licenses/by-sa/4.0/")) "CC-BY-NC-SA-4.0")
-                             ", " (a (@ (href "#")) "Source") " "
+                             ", " (a (@ (href "https://git.marius.pm/website/")) "Source") " "
                              (a (@ (href "https://www.gnu.org/licenses/gpl-3.0.txt")) "GPL-3.0") ".")
                           (p "This website is built with "
                              (a (@ (href "https://dthompson.us/projects/haunt.html")) "Haunt")
