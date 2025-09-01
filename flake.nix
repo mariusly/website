@@ -12,16 +12,19 @@
     {
       packages.${system}.default = pkgs.stdenv.mkDerivation {
         pname = "website";
-        version = "0.1.1";
+        version = "0.1.2";
 
         src = ./.;
 
         nativeBuildInputs = [
+          pkgs.glibcLocales
           pkgs.guile
+          pkgs.guile-commonmark
           pkgs.haunt
         ];
 
         buildPhase = ''
+          export LC_ALL=en_US.UTF-8
           haunt build
         '';
 
@@ -38,8 +41,8 @@
       devShells.${system}.default = pkgs.mkShell {
         buildInputs = [
           pkgs.guile
-          pkgs.haunt
           pkgs.guile-commonmark
+          pkgs.haunt
         ];
         shellHook = ''
           echo "Entered Haunt dev shell. Run: haunt build/serve"
