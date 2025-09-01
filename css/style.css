@@ -1,0 +1,180 @@
+:root {
+    --primary-color: #0077cc;
+    --secondary-color: #5500cc;
+    --background-color: #fff;
+    --text-color: #333;
+    --text-alt-color: #888;
+    --link-hover-bg: rgba(0, 0, 0, 0.05);
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+.wrapper {
+    max-width: 80ch;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+}
+
+header .lambda {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+hr {
+    height: 1px;
+    border: none;
+    background-color: var(--link-hover-bg);
+}
+
+h1 {
+    margin: 0;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover {
+    background-color: var(--link-hover-bg);
+    outline: 4px solid var(--link-hover-bg);
+}
+
+a:visited {
+    color: var(--secondary-color);
+}
+
+.post {
+    margin-bottom: 24px;
+}
+
+.post .date {
+    display: block;
+    font-size: 0.8em;
+    color: var(--text-alt-color);
+    margin-bottom: 5px;
+}
+
+.post h2 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.25rem;
+    font-family: serif;
+}
+
+.post h2 a {
+    color: var(--text-color);
+}
+
+.post .tags {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0;
+    display: flex;
+    gap: 6px;
+}
+
+.post .tag {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.post .tag a {
+    color: var(--text-alt-color);
+}
+
+.post .read-more {
+    font-size: 0.8em;
+    margin: 5px 0;
+}
+
+.post .tags-container {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    color: var(--text-alt-color);
+}
+
+footer p {
+    margin: 4px 0;
+}
+
+footer .cc:hover {
+    background-color: transparent;
+    outline: none;
+}
+
+main h1 {
+    font-size: 1.5em;
+    font-family: serif;
+    font-weight: 400;
+}
+
+main h2 {
+    font-size: 1.25em;
+    font-family: serif;
+    font-weight: 400;
+}
+
+main h3 {
+    font-size: 1.1em;
+    font-family: serif;
+    font-weight: 400;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    header ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .post .tags-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-color: #3399ff;
+        --secondary-color: #aa66ff;
+        --background-color: #121212;
+        --text-color: #eee;
+        --text-alt-color: #aaa;
+        --link-hover-bg: rgba(255, 255, 255, 0.1);
+    }
+}
