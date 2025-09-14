@@ -139,7 +139,6 @@
 
 							 (div (@ (class "tags-container"))
 
-
 								  (ul (@ (class "tags")) ,@(map (lambda (tag)
 																  `(li (@
 																		(class "tag"))
